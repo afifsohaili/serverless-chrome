@@ -39,7 +39,7 @@ export default class ServerlessChrome {
 
     const {
       provider: { name: providerName, runtime },
-      plugins,
+      plugins: { modules: plugins },
     } = serverless.service
 
     throwIfUnsupportedProvider(providerName)
